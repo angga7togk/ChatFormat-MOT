@@ -1,0 +1,6 @@
+name: ChatFormat
+main: com.angga7togk.chatformat.ChatFormat
+version: 1.0.0
+api: ["1.0.0"]
+author: angga7togk
+description: ChatFormat Nukkit MOT Plugin

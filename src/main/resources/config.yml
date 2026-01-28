@@ -1,0 +1,8 @@
+chat-format:
+  default: "§r[1] §r%luckperms_prefix%%player_displayname% §7> §r%msg%"
+
+nametag-format:
+  default: "§r[1] §r%luckperms_prefix%%player_displayname%"
+
+scoretag-format:
+  default: "§cHP %player_health%§7/§c%player_max_health%  §a%player_ping%ms"
