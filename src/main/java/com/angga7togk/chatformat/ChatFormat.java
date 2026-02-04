@@ -1,6 +1,6 @@
 package com.angga7togk.chatformat;
 
-import com.angga7togk.placeholderapi.PlaceholderAPI;
+import com.angga7togk.core.Core;
 
 import cn.nukkit.Player;
 import cn.nukkit.event.EventHandler;
@@ -59,6 +59,6 @@ public class ChatFormat extends PluginBase implements Listener {
                 .replace("%msg%", msg);
 
         event.setFormat(
-                PlaceholderAPI.get().translate(player, format));
+                Core.get().getPlaceholder().translate(player, format));
     }
 }

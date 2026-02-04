@@ -1,6 +1,6 @@
 package com.angga7togk.chatformat;
 
-import com.angga7togk.placeholderapi.PlaceholderAPI;
+import com.angga7togk.core.Core;
 
 import cn.nukkit.Player;
 import cn.nukkit.scheduler.PluginTask;
@@ -31,8 +31,8 @@ public class FormatTask extends PluginTask<ChatFormat> {
             String nametagFormat = this.getOwner().getNametagFormat(rankName);
             String scoretagFormat = this.getOwner().getScoretagFormat(rankName);
 
-            String newNameTag = PlaceholderAPI.get().translate(player, nametagFormat);
-            String newScoreTag = PlaceholderAPI.get().translate(player, scoretagFormat);
+            String newNameTag = Core.get().getPlaceholder().translate(player, nametagFormat);
+            String newScoreTag = Core.get().getPlaceholder().translate(player, scoretagFormat);
 
             if (!newNameTag.equals(player.getNameTag())) {
                 player.setNameTag(newNameTag);
